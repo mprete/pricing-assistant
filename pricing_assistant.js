@@ -18,4 +18,4 @@ console.log("Final Price With Tax:    $" + finalPriceWithTax.toFixed(2));
 console.log("Profit Per Unit:         $" + profitPerUnit.toFixed(2));
 console.log("Break-even Units:         " + breakEvenUnits);
 console.log("Profitable Per Unit:      " + isProfitablePerUnit);
-console.log("==============================");
+
