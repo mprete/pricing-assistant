@@ -1,7 +1,7 @@
 const productName = "Laptop";
 const costPerUnit = 1100.00;
 const basePrice = 2000.00;
-const discountRate = .10;
+const discountRate = .15;
 const salesTaxRate = .07;
 const fixedMonthlyCosts = 4000;
 
