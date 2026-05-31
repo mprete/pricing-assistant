@@ -1,0 +1,21 @@
+const productName = "Laptop";
+const costPerUnit = 1100.00;
+const basePrice = 1500.00;
+const discountRate = .10;
+const salesTaxRate = .07;
+const fixedMonthlyCosts = 4000;
+
+const discountedPrice = basePrice * (1 - discountRate);
+const finalPriceWithTax = discountedPrice * (1+ salesTaxRate);
+const profitPerUnit = finalPriceWithTax - costPerUnit;
+const breakEvenUnits = Math.ceil(fixedMonthlyCosts / profitPerUnit);
+const isProfitablePerUnit = profitPerUnit > 0;
+
+console.log("=== Product Pricing Assistant ===");
+console.log("Product Name:           " + productName);
+console.log("Discounted Price:        $" + discountedPrice.toFixed(2));
+console.log("Final Price With Tax:    $" + finalPriceWithTax.toFixed(2));
+console.log("Profit Per Unit:         $" + profitPerUnit.toFixed(2));
+console.log("Break-even Units:         " + breakEvenUnits);
+console.log("Profitable Per Unit:      " + isProfitablePerUnit);
+console.log("==============================");
